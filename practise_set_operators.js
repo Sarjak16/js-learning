@@ -1,7 +1,7 @@
 //finds if the persons age lies between 10 to 20.
 //problem 1
 
-/*
+
 
 let age = prompt("what is your age")
 age = Number.parseInt(age)
@@ -13,11 +13,11 @@ else {
 console.log("your age doesnt lie between 10 and 20")
 }
 
-*/
+
 
 //problem 2
 //demonstrare usage of switch case statement
-/*let age = prompt ("what is your age")
+let age = prompt ("what is your age")
 switch (age) {
   case '12':
     console.log("your   age is 12")
@@ -36,11 +36,11 @@ switch (age) {
     
 }
 
-*/
+
 
 //problem 3
 
-/*
+
 
 let num = prompt("what is your age")
 num = Number.parseInt(num)
@@ -53,16 +53,16 @@ else {
   console.log("your number is not divisible by 2 or 3")
 }
 
-*/
+
 
 // problem 4
 //use of ternary operator
-/*
+
 
 let age= 19
 let a= age>18?"you can drive" :"you cannot drive"
 console.log(a)
 
 
-*/
+
   
