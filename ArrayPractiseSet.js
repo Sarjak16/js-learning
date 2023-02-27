@@ -29,3 +29,13 @@ let n= arr.filter((x)=>{
   
 })
 console.log(n)
+
+//problem 4 "create an array of square of given numbers"
+
+let arr =[1, 20, 30, 4, 5, 60, 7, 83]
+let n= arr.map((x)=>{
+  return x*x
+  
+})
+console.log(n)
+
