@@ -19,3 +19,13 @@ do {
 arr.push(a)
 }while (a != 0);
 console.log(arr)
+
+//problem3 "filter for numbers divisible by 10 from given array"
+
+
+let arr =[1, 20, 30, 4, 5, 60, 7, 83]
+let n= arr.filter((x)=>{
+  return x%10 ==0
+  
+})
+console.log(n)
