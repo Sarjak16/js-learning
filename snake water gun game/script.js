@@ -1,4 +1,4 @@
-console.log("enter s to choose snake, g to choose gun and w to choose water.")
+alert("enter s to choose snake, g to choose gun and w to choose water.")
 
 let user = prompt("enter s, w or g")
 let cpuI = math.floor(math.random() * 3);
