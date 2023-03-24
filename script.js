@@ -8,3 +8,10 @@ console.log(first.hasAttribute("style"))
 first.setAttribute("class", "true truth")
 //first.removeAttribute("class") removes class 
 console.log(first.attributes)//Nodemap
+
+
+
+//custom attribute:
+console.log(first.dataset)
+console.log(first.dataset.player)
+console.log(first.dataset.game)
