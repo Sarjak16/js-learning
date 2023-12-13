@@ -1,6 +1,6 @@
-<!-- note: -->
+<!-- note: 
 
-<!-- <!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -49,12 +49,11 @@
         <label for="marks">DBMS:</label><input type="number" id="txtMark3"><br>
         <label for="marks">Numerical Method:</label><input type="number" id="txtMark4"><br>
         <label for="marks">Software Engineering:</label><input type="number" id="txtMark5"><br>
-
-        <button onclick="display_value()">Submit</button>
+        <input type="button" value="submit" onclick="displayValue()">
     </form>
 
     <script>
-        function display_value(){
+        function displayValue(){
             let nameStudent = document.getElementById('txtName').value;
             let marks1 = document.getElementById('txtMark1').value;
             let marks2= document.getElementById('txtMark2').value;

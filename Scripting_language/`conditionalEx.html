@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function grading() {
+        var val1 = parseInt(document.getElementById("num1").value);
+        var val2 = parseInt(document.getElementById("num2").value);
+        var val3 = parseInt(document.getElementById("num3").value);
+        var val4 = parseInt(document.getElementById("num4").value);
+    
+        var final = val1 + val2 + val3 + val4;
+        document.getElementById("result").innerHTML = +final  + " / 400 ";
+    }
+    
+    function average() {
+        var val1 = parseInt(document.getElementById("num1").value);
+        var val2 = parseInt(document.getElementById("num2").value);
+        var val3 = parseInt(document.getElementById("num3").value);
+        var val4 = parseInt(document.getElementById("num4").value);
+    
+        var final1 = val1 + val2 + val3 + val4; 
+        var total = final1 / 4;
+        document.getElementById("avrg").innerHTML = +total;
+    }
+    </script>
+
+<label>Name</label><input type="text"><br>
+<label>Os</label>
+<input type="text" id="num1"><br>
+<label>NM</label>
+<input type="text" id="num2"><br>
+<label>SE</label>
+<input type="text" id="num3"><br>
+<label>DBMS</label>
+<input type="text" id="num4"><br>
+<button onClick="grading()">Total</button>
+<p id="result"></p><br>
+<button onClick="average()">Average</button><br>
+<p id="avrg"></p>
+<button onClick="system()">Grade</button><br>
+<p id="grad"></p>
+
+
+</body>
+</html>
