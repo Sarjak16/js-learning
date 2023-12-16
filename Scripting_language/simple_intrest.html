@@ -1,26 +1,28 @@
 <!-- calculation of simple intrest -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
     <script>
-        function calculate() {
-  var panel = parseInt(document.getElementsById("panel").value);
-  panelv = 65;
-  panelt = panel * panelv;
-  derating_value = 2;
-  total_hours_standby = panelt * derating_value;
-}
+      function calculateSI() {
+        let p = document.getElementById("inputP").value;
+        let n = document.getElementById("inputN").value;
+        let r = document.getElementById("inputR").value;
 
-document.getElementsById("total_hours").innerHTML = total_hours_standby;
+        let simpleInterest = (p * n * r) / 100;
+
+        document.getElementById("result").innerHTML = simpleInterest;
+      }
     </script>
-<input type="number" id="panel" placeholder="panel quantity"></input><br>
-<button type="button" onclick="calculate">Result</button>
-
-<p id="total_hours">result displays here</p>
-</body>
+  </head>
+  <body>
+    <h4>Enter the principal amount:</h4>
+    <input id="inputP" />
+    <h4>Enter the rate of interest:</h4>
+    <input id="inputR" />
+    <h4>Enter the time:</h4>
+    <input id="inputN" />
+    <br /><br />
+    <button onclick="calculateSI()">Calculate Simple Interest</button>
+    <p id="result"></p>
+  </body>
 </html>
