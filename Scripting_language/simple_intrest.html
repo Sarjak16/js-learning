@@ -1,0 +1,22 @@
+<!-- calculation of simple intrest -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calculate() {
+  var panel = parseInt(document.getElementsById("panel").value);
+  panelv = 65;
+  panelt = panel * panelv;
+  derating_value = 2;
+  total_hours_standby = panelt * derating_value;
+}
+
+document.getElementsById("total_hours").innerHTML = total_hours_standby;
+    </script>
+
+</html>
