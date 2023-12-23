@@ -104,7 +104,35 @@ he program display the work " Good Correct work Answer " if the input number is 
 
 <!-- 4> Write a program to compute the sum of two given integer. If two number are same , then return triple their sum. 
 4) Ans:--->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sum of Integers</title>
+</head>
+<body>
 
+<script>
+function computeSum(num1, num2) {
+  if (num1 === num2) {
+    // If numbers are same, triple their sum
+    return 3 * (num1 + num2);
+  } else {
+    // Otherwise, return their regular sum
+    return num1 + num2;
+  }
+}
+
+// Example usage:
+let result = computeSum(5, 5);  // Should return 30
+console.log("The result is:", result);
+
+// Try different values here:
+result = computeSum(4, 6);   // Should return 10
+console.log("The result is:", result);
+</script>
+
+</body>
+</html>
 
 <!-- 5>Program to find the greatest among 3 numbers. -->
 
