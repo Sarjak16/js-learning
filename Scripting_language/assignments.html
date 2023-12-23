@@ -135,7 +135,45 @@ console.log("The result is:", result);
 </html>
 
 <!-- 5>Program to find the greatest among 3 numbers. -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Find the Greatest Number</title>
+</head>
+<body>
 
+<h1>Finding the Greatest Number</h1>
+
+<label for="num1">Enter the first number:</label><br>
+<input type="number" id="num1"><br><br>
+
+<label for="num2">Enter the second number:</label><br>
+<input type="number" id="num2"><br><br>
+
+<label for="num3">Enter the third number:</label><br>
+<input type="number" id="num3"><br><br>
+
+<button onclick="findGreatest()">Find Greatest</button>
+
+<p id="result"></p>
+
+<script>
+function findGreatest() {
+  // Get the numbers from the input fields
+  var num1 = parseFloat(document.getElementById("num1").value);
+  var num2 = parseFloat(document.getElementById("num2").value);
+  var num3 = parseFloat(document.getElementById("num3").value);
+
+  // Find the greatest number using Math.max
+  var greatest = Math.max(num1, num2, num3);
+
+  // Display the result in the result paragraph
+  document.getElementById("result").innerHTML = "The greatest number is: " + greatest;
+}
+</script>
+
+</body>
+</html>
 
 <!-- 6>Programt to compute the sum of two given integers, if the sum is in range 50=85 return 65 otherwise return 80. -->
 
