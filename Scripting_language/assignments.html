@@ -177,4 +177,23 @@ function findGreatest() {
 
 <!-- 6>Programt to compute the sum of two given integers, if the sum is in range 50=85 return 65 otherwise return 80. -->
 
+<!DOCTYPE html>
+<html>
+<head>
+<title>Conditional Sum Calculation</title>
+</head>
+<body>
+  <script>
+    function sortaSum(x, y) {
+      const sum = x + y;
+      return sum >= 50 && sum <= 85 ? 65 : 80;
+    }
 
+    const num1 = 35;
+    const num2 = 40;
+    const result = sortaSum(num1, num2);
+
+    document.write("The result is: " + result);
+  </script>
+</body>
+</html>
