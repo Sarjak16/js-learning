@@ -1,4 +1,5 @@
-<!-- 1. write a javascript program to check whether tha number is palindrome or not. -->
+<!-- 1. write a javascript program to check whether tha number is palindrome or not. 
+1)ans:-->
 
 
 <!-- <!DOCTYPE html>
@@ -34,8 +35,9 @@
 
 <!-- 2.write a javascript program to display the current day and time in the following format:
 sample output: Today is :Tuesday
-current time is: 10pm: 30: 38 -->
-<!DOCTYPE html>
+current time is: 10pm: 30: 38
+2)Ans -->
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -57,14 +59,46 @@ console.log('date:', n);
 console.log('time:',time);
     </script>
 </body>
-</html>
+</html> -->
 
 <!-- 
 3> Write a program where the program takes random number between 1 and 10 and the user is prompted to input a guess number . 
 he program display the work " Good Correct work Answer " if the input number is matched the guess number otherwie 
 " Not Correct try again". -->
  
+<!DOCTYPE html>
+<html>
+<head>
+<title>Guess the Number</title>
+</head>
+<body>
+  <h1>Guess the Number</h1>
+  <p id="message"></p>
+  <input type="text" id="guessInput">
+  <button onclick="checkGuess()">Check Guess</button>
 
+  <script>
+    // Generate a random number between 1 and 10
+    const randomNumber = Math.floor(Math.random() * 10) + 1;
+
+    function checkGuess() {
+      const guessInput = document.getElementById("guessInput");
+      const guess = parseInt(guessInput.value);
+
+      if (!Number.isInteger(guess)) {
+        document.getElementById("message").textContent = "Please enter a valid integer.";
+        return;
+      }
+
+      if (guess === randomNumber) {
+        document.getElementById("message").textContent = "Good Correct work Answer!";
+      } else {
+        document.getElementById("message").textContent = "Not Correct, try again.";
+      }
+    }
+  </script>
+</body>
+</html>
 
 
 
