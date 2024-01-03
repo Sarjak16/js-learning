@@ -26,34 +26,34 @@
     <script>
         function
  
- displayDetails() {
-     const name = document.getElementById("name").value;
-     const age = document.getElementById("age").value;
-     const address = document.getElementById("address").value;
- 
-     let errorMessage = "";
- 
-     if (name === "") {
-         errorMessage += "Please enter the student's name.<br>";
-     }
- 
-     if (age === "") {
-         errorMessage += "Please enter the student's age.<br>";
-     }
- 
-     if (address === "") {
-         errorMessage += "Please enter the student's address.<br>";
-     }
- 
-     if (errorMessage !== "") {
-         document.getElementById("result").innerHTML = errorMessage;
-     } else {
-         document.getElementById("result").innerHTML = "Student Details:<br>" +
-             "Name: " + name + "<br>" +
-             "Age: " + age + "<br>" +
-             "Address: " + address;
-     }
- }
+displayDetails() {
+    const name = document.getElementById("name").value;
+    const age = document.getElementById("age").value;
+    const address = document.getElementById("address").value;
+
+    let errorMessage = "";
+
+    if (name === "") {
+        errorMessage += "Please enter the student's name.<br>";
+    }
+
+    if (age === "") {
+        errorMessage += "Please enter the student's age.<br>";
+    }
+
+    if (address === "") {
+        errorMessage += "Please enter the student's address.<br>";
+    }
+
+    if (errorMessage !== "") {
+        document.getElementById("result").innerHTML = errorMessage;
+    } else {
+        document.getElementById("result").innerHTML = "Student Details:<br>" +
+            "Name: " + name + "<br>" +
+            "Age: " + age + "<br>" +
+            "Address: " + address;
+    }
+}
     </script>
 </body>
 </html>
