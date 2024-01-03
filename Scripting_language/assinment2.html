@@ -87,15 +87,45 @@ image.addEventListener("mouseout", function() {
 <!-- 2. -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <form action="">
-        <label for="">Value</label>
-        <input type="number">
+    <form>
+        <label for="numb">Enter the number:</label>
+        <input type="number" id="numb"><br />
+
+        <label for="double">Action</label>
+        <p>
+            <input type="radio" name="dd" id="double" value="double" required>
+            <label for="double">Double</label>
+
+            <input type="radio" name="dd" id="cube" value="cube" required>
+            <label for="cube">Cube</label><br />
+        </p>
+
+        <button type="button" onclick="check()">Check</button>
+        <label for="Result">Result:</label>
+        <input type="number" id="result">
+    
+        <script>
+            function check() {
+                let num1 = parseFloat(document.getElementById('numb').value);
+                let resultField = document.getElementById('result');
+
+                if (document.getElementById('double').checked) {
+                    resultField.value = num1 * 2;
+                } else if (document.getElementById('cube').checked) {
+                    resultField.value = num1 * num1 * num1;
+                }
+            }
+        </script>
     </form>
 </body>
+
 </html>
