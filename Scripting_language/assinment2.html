@@ -1,0 +1,59 @@
+<!-- write a javascript program that takes the student details and while displaying the values check whether the datas are filled in textbox or not. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+</head>
+<body>
+    <h1>Enter Student Details</h1>
+    <form id="studentForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age"><br><br>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address"><br><br>
+
+        <button type="button" onclick="displayDetails()">Submit</button>
+    </form>
+
+    <p id="result"></p>
+
+    <script>
+        function
+ 
+ displayDetails() {
+     const name = document.getElementById("name").value;
+     const age = document.getElementById("age").value;
+     const address = document.getElementById("address").value;
+ 
+     let errorMessage = "";
+ 
+     if (name === "") {
+         errorMessage += "Please enter the student's name.<br>";
+     }
+ 
+     if (age === "") {
+         errorMessage += "Please enter the student's age.<br>";
+     }
+ 
+     if (address === "") {
+         errorMessage += "Please enter the student's address.<br>";
+     }
+ 
+     if (errorMessage !== "") {
+         document.getElementById("result").innerHTML = errorMessage;
+     } else {
+         document.getElementById("result").innerHTML = "Student Details:<br>" +
+             "Name: " + name + "<br>" +
+             "Age: " + age + "<br>" +
+             "Address: " + address;
+     }
+ }
+    </script>
+</body>
+</html>
